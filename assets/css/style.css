@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300&display=swap');body{
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+}
+
+
+body{ zoom: 75%} 
+
+
+.phenix{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+
+}
+
+  .shapka{
+   margin: auto 70px;
+    float: left;
+    width: 99.6%;
+    left: 200px;
+    height: 250px;
+    margin: 10px;
+}
+
+.txt{
+  font-family: "Cormorant Garamond";
+  font-size: 22px;
+  width:800px;
+  
+}
+
+
+
+
+
+.text-imag {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+  
+ }
+
+
+.ramka{
+  border-style:solid;
+  border-width:3px;
+  color: black; 
+  margin: 6px;
+
+}
+
+.text-video{
+  background-color: #f8f8f8fa; 
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+
+
+/* начала кнопки */
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #e94a00;
+background: linear-gradient(90deg, #e94a00(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #e94a00(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(305px + 12px);
+  min-height: calc(65px + 12px);
+  border: 6px solid #e94a00;
+  box-shadow: 0 0 60px#e94a00(236, 87, 0, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #e94a00;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+/* конец кнопки */
+
+
+
+
+
